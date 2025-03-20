@@ -81,7 +81,7 @@ export default {
             <br />
             <img id="result" alt="" />
             <script>
-              async function generateImage() {
+              window.generateImage = async () => {
                 const prompt = (document.getElementById('prompt') as HTMLInputElement).value;
                 if (!prompt) {
                   alert('please enter a prompt');
@@ -103,7 +103,7 @@ export default {
                 } else {
                   alert('failed to generate image');
                 }
-              }
+              };
             </script>
           </body>
         </html>`,
